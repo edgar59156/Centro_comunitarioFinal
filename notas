@@ -1,0 +1,6 @@
+    <select name="id_cliente" id="">
+        <option value=" ">...</option>
+        <?php foreach ($participantes_disponibles as $key => $dato) : ?>
+            <option value="<?php echo $dato['id_cliente']; ?>"><?php echo $dato['primer_apellido'] . " " . $dato['segundo_apellido'] . " " . $dato['nombre']; ?></option>
+        <?php endforeach; ?>
+    </select>
